@@ -5,6 +5,7 @@ public class Doctor {
     // Atributos
     static int id = 0; // Auto-Incrementado
     String name;
+    String email;
     String speciality;
 
     // Declarando el método constructor
@@ -13,6 +14,7 @@ public class Doctor {
         id ++;
     }
 
+    // Metodo constructor sobrecargado
     public Doctor(String name, String speciality){
         this.name = name;
         this.speciality = speciality;
