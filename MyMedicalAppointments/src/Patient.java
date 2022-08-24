@@ -16,7 +16,7 @@ public class Patient extends User {
     }
 
     public String getWeight(){
-        return this.weight+" Kg";
+        return this.weight+" Kg.";
     }
 
     public String getHeight() {
@@ -41,5 +41,10 @@ public class Patient extends User {
 
     public void setBlood(String blood) {
         this.blood = blood;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight " + getHeight() + "\nBlood: " + blood;
     }
 }

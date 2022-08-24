@@ -16,5 +16,8 @@ public class Main {
             System.out.println(i.getTime());
         }
 
+        Patient patient = new Patient("Alejandra","alejandra@gmail.com");
+        System.out.println(patient);
+
     }
 }
